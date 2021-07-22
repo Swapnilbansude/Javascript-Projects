@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /*background: linear-gradient(to bottom, #68EACC, #497BE8 100%);*/
+    /*background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);*/
+    background: linear-gradient(to right, #fd746c, #ff9068);
+}
+
+.card {
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 250px;
+    width: 50%;
+    height: auto;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: chocolate;
+}
+
+.card .underline {
+    width: 10em;
+    display: block;
+    height: 3px;
+    /*background-color: #4b4b4d;*/
+    background: linear-gradient(to right, #fd746c, #ff9068);
+    margin: 10px auto 0;
+}
+
+.card-footer {
+    background: white;
+    border: none;
+    font-weight: 400;
+    color: chocolate;
+}
+
+.card-header {
+    background: white;
+    border: none;
+    font-weight: 400;
+    color: chocolate;
+}
+
+.form-control {
+    margin-top: 20px;
+    width: 100%;
+    border-color: #fd746c;
+}
+
+.form-control:focus {
+    outline: none !important;
+    border:1px solid #fd746c;
+    box-shadow: 0 0 10px #ff9068;
+}
+
+.btn {
+    margin-top: 20px;
+    background: linear-gradient(to right, #fd746c, #ff9068);
+    color: #fff;
+    border-color: #ff9068;
+    width: 100%;
+}
+
+.btn:hover {
+    border-color: #ff9068;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.todoList {
+    /*max-height: 250px;
+    overflow-y: auto;*/
+    margin-top: 15px;
+}
+
+.todoList li {
+    list-style: none;
+    height: 45px;
+    font-weight: bold;
+    color: #EA602E;
+    line-height: 45px;
+    position: relative;
+    background: #F9DBD0;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 55px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList li span {
+    position: absolute;
+    right: -45px;
+    width: 45px;
+    text-align: center;
+    background: linear-gradient(to right, #fd746c, #ff9068);
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todoList li:hover span {
+    right: 0px;
+}
+
+.todoList li span.check {
+    position: absolute;
+    right: 462px;
+    width: 40px;
+    text-align: center;
+    background: #F9DBD0;
+    color: #EA602E;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/*.todoList li:hover span {
+    right: 0px;
+}*/
+
